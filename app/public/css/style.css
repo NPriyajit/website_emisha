@@ -1,0 +1,567 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);   
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:100, 300);*/
+
+body {
+  margin: 0px;
+  border: 0px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+h1, h2, h4, h5{
+  font-weight: 800;
+  font-family: 'Lato', sans-serif;
+  color: red;
+}
+
+h3,h6
+{
+font-weight: 800;
+font-family: 'Lato', sans-serif;
+  font-weight: 80;
+  color: blue;
+  text-align:right;
+  right:0px;
+}
+
+p {
+  font-family:  'Lato', sans-serif;
+  font-weight: 400;
+}
+
+p.pointer
+{
+    display: list-item;          /* This has to be "list-item"                                               */
+    list-style-type:disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+    list-style-position: inside; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position */
+}
+
+.imgtab
+{
+	right:10px;
+	bottom:10px;
+}
+
+.tagabout #a
+{ 
+	 font-family: San Francisco;
+     height:50px;
+	 font-family: San Francisco;
+     font-size: 25px;
+     background-color:#513afc;
+     border-radius:10px;
+     padding: 16px 3px;
+     float:left;
+     valign:bottom;
+     box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+     margin-bottom: 50px;
+}
+
+
+/* hover text on img*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*columner rower*/
+
+/* Create three equal columns that floats next to each other */
+/* Create three equal columns that floats next to each other */
+
+p.imgtext
+{
+	color: lightblack;
+	bottom: 30px;
+	font-weight: 200px;
+	align:left;
+}
+
+/*fliper*/
+
+.flip-box {
+  background-color: transparent;
+  margin:25px;
+  width: 430px;
+  height: 400px;
+ /* border: 1px solid #f1f1f1;*/
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back{
+  position:absolute;
+
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: #3aafa9;
+  color: black;
+  border-radius:25px;
+}
+
+.flip-box-front1, .flip-box-back1{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front1 {
+  background-color: #3aafa9;
+  color: black;
+  border-radius:25px;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #2b33bc;
+  color: white;
+  border-radius:25px;
+  transform: rotateY(180deg);
+}
+
+.flip-box-back1 {
+  background-color: orange;
+  color: black;
+  border-radius:25px;
+  transform: rotateY(180deg);
+}
+
+
+/*fliper*/
+
+
+li {
+  font-family: San Francisco;
+  font-weight: 100;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("http://localhost:3000/pic/emishahome.png");
+
+  min-height: 550px;
+  
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:50px;	
+  margin-top:30px;
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+  top:30px;
+  right:0px;
+}
+
+
+
+/*pic with text*/
+
+.res
+{
+	background-color: gray;
+	width:400px;
+	height:360px;
+	color:white;
+	margin:25px;
+	border-radius:10px;
+	position:relative;
+	padding:20px;
+	text-align:left;
+	
+}
+
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: darkgrey;
+}
+
+.button {
+  border: none;
+  outline: none;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius:10px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/*end pic with text*/
+
+
+
+
+
+
+
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+/* Navbar links */
+.topnav a {
+  font-family: 'Lato', sans-serif;
+  float: left;
+  color: black;/*#f2f2f2*/
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  border-radius: 10px;
+  color: black;
+}
+
+a {
+  color: #DD4F53;
+}
+
+/**  Header Navigation **/
+
+header {
+  font-size: 2rem;
+}
+
+header .jumbotron {
+  height: 40vh;
+  margin-bottom: 0;
+  background: url(../images/misc/background.jpg) no-repeat 100% 5%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  margin:10px;;
+  padding:0px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.gradient {
+	width:105%;
+	height:100%;
+	padding:20px;
+   margin-left:-50px;
+   margin-bottom:-80px;
+   margin-top:50px;
+  background-image:
+    linear-gradient(
+        #ffffff,blue
+    );
+}
+
+.gradient1 {
+	width:105%;
+	height:100%;
+	padding:40px;
+	margin:-30px;
+  background-image:
+    linear-gradient(
+        blue,#ffffff
+    );
+}
+
+/*nav bar full*/
+.collapsible {	
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing:4px;
+  margin-top:20px;
+
+  
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+
+/**  Navbar **/
+
+header .navbar {
+  background: #CF5565;
+  margin-bottom: 0;
+  border-radius: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+header .navbar-default {
+  border: none;
+  border-radius: 0;
+  padding: 10px 0;
+}
+
+.navbar-inverse {
+  border: 0;
+}
+
+
+header .navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+header .navbar-inverse .navbar-brand {
+  color: white;
+}
+
+header .navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+.maincontent {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  line-height: 160%;
+}
+
+.sidebar {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  line-height: 130%;
+}
+
+.sidebar .sidebar-title {
+  font-size: 1.5em;
+}
+
+.sidebar .sidebar-body li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    line-height: 160%;
+  }
+  .sidebar .sidebar-title {
+    font-size: 2em;
+  }
+}
+
+.friendslist {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  line-height: 160%;
+}
+
+#friendList .friendslist-img {
+  margin-right: 20px;
+}
+
+.friendslist-title {
+  font-size: 1.7em;
+}
+
+#home .friendslist-title {
+  font-size: 1.5em;
+}
+
+#friendDetail .friendslist-title {
+  font-size: 2.4em;
+}
+
+#friendDetail .friendslist-img {
+  margin: 20px 0;
+}
+
+.form-control {
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+
+.chat-form {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.jumbotron {
+  padding: 20px 0;
+  background-color: #FFEB8B;
+}
+
+/**  chat-display **/
+
+.chat-display {
+  min-height: 150px;
+  max-height: 40vh;
+  overflow: scroll;
+  font-size: 1.2em;
+}
+
+.chat-display p {
+  font-size: .9em;
+  padding: 0 10px;
+}
+
+.feedback, .feedback-form-title {
+  font-size: 2rem;
+}
+
+.feedback-form {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+
+.feedback-title {
+  font-size: 1.2em;
+}
+
+.feedback-form-title {
+  font-size: 2em;
+}
+
+.feedback-name {
+  font-size: .6em;
+  font-weight: 100;
+}
+
+.feedback-message {
+  font-weight: 100;
+  font-size: .9em;
+  line-height: 120%;
+  margin-top: 5px;
+}
+
+.feedback-item {
+  border-bottom: 1px solid gray;
+  padding: 8px 0;
+}
+
+.feedback-item:last-of-type {
+  border-bottom: none;
+}
+
+
+/**  pixgrid **/
+
+.pixgrid {
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.pixgrid img {
+  display: block;
+  padding: 5px;
+  float: left;
+  width: 33.33%;
+  border-radius: 10px;
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .pixgrid img {
+    width: 20%;
+  }
+  
+  
+  

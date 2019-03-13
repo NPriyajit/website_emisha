@@ -1,0 +1,18 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)\r  ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e js,css,ejs,json app/app.js --watch app"
+  },
+  "author": "priyajit",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^4.2.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "restify": "^8.0.0",
+    "socketio": "^1.0.0"
+  }
+}

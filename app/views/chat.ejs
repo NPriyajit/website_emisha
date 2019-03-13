@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://localhost:3000/css/test.css">
+    <title>EMISHA | CHAT</title>
+    <link rel="icon" type="image/ico" href="http://localhost:3000/pic/image.jpg" />
+    <script language="javascript">
+    var i = 0;
+    var c=0;
+var txt = "Hello, Here I am your Assistant, How can I help you sir...	" ; /* The text */
+
+var speed = 90; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+     document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+    }
+   if(c==1)
+    {
+    setTimeout(function(){document.getElementById("demo").innerHTML="Hello, Sir. ";},2000);
+    document.getElementById("chat-message").focus();
+   // i=txt.length+1;
+    }
+   if(i==txt.length)
+   {
+    document.getElementById("demo").innerHTML=" ";
+    txt="Ask me about EMISHA....";
+    if(c==0)
+    {
+    i=0;
+    c+=1;
+    }
+  }
+  
+  
+}</script>
+ 
+      </head>
+  <body onload="typeWriter()" >
+     <!--     <header class="chat-header">-->
+  <fieldset style="position:sticky; height:400px; background-color: lightgrey;"> 
+    <legend style="position:sticky; overflow:hidden;">				<h1>Chat with Bot</h1></legend> 
+    <div style="overflow: auto; height:310px;">
+    <div class="container" >
+      <div class="row">
+        <div class="col-sm-12">
+          <article class="chat">
+            
+            <div class="panel panel-default">
+              <div class="panel-body chat-display">
+          <!--    <button onclick="typeWriter()">try</button>-->
+       
+      <h3>  <img  id="imgbotid" src="http://localhost:3000/pic/botico.jpg" ></h3> <p id="demo"></p        
+               
+              </div><!-- panel-body -->
+            </div>
+           
+            
+            
+            <form name="chatForm" class="form-horizontal chat-form">
+              <!-- col-sm-10 -->
+              </div><!-- form-group -->
+              <div class="form-group">
+                <label for="chat-message" class="col-sm-2 control-label"></label>
+                <div class="col-sm-10">
+       
+                  <div class="input-group">
+         
+                   <input type="text"  placeholder="Enter a message, then press enter" class="form-control" id="chat-message" rows="2" autocomplete="off"
+                     required>
+                    <span class="input-group-btn">
+                      <button id="chat-submit" class="btn btn-info" type="submit">Chat</button>
+                    </span>
+                  </div><!-- input-group -->
+                </div><!-- col-sm-10 -->
+              </div><!-- form-group -->
+            </form>
+            <!-- panel-default -->
+          </article><!-- article -->
+        </div><!-- col-sm-12 -->
+      </div><!-- row -->
+    </div><!-- container -->
+    </div>
+</fieldset>
+<% include templet/jsdefaults.ejs%>
+
+</body>
+</html>
